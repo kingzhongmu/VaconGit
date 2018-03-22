@@ -28,3 +28,5 @@ def user(name):
 if __name__ == '__main__':
     # debug 参数控制服务器以调试模式启动
     app.run(debug=True)
+	
+	print("testGit")

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            top: 0;
+            left: 0;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            background-color: #777;
+            font-size: 25px;
+            width: 100%;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            top: 0;
+        }
+
+        ul li {
+            margin: 0;
+            border: 0;
+
+        }
+
+        ul li :hover {
+
+            margin-left: 0;
+            background-color: #222;
+        }
+
+        ul li.active {
+            color: white;
+            background-color: #4CAF50;
+        }
+
+        ul li a {
+            display: flex;
+            text-decoration: none;
+            padding: 16px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+
+
+<body>
+
+<ul style="">
+    <li class="active"><a href="#">Mock主页</a></li>
+    <li><a href="#">页面管理</a></li>
+    <li><a href="#">Vacon's 博客</a></li>
+    <li><a href="#">关于我们</a></li>
+</ul>
+<div id="test-x">
+    <h1> 计算属性</h1>
+    <button v-on:click="addToA()">Add to A</button>
+    <button v-on:click="b++">Add to B</button>
+    <button v-on:click="c++">Add to C</button>
+    <p> A - {{a}}</p>
+    <p> A - {{b}}</p>
+    <p> Age + A = {{addToA()}}</p>
+    <p> Age + B = {{addToB()}}</p>
+    <p> Age + X = {{addToX()}}</p>
+</div>
+<script>
+
+    app=new Vue({
+        el: "#test-x",
+        data: {
+            a: 0,
+            b: 0,
+            c: 0,
+            age: 20
+        },
+        methods: {
+            addToA: function () {
+                console.log("addToA: " + (this.a + this.age))
+                // return this.a + this.age;
+
+            },
+            addToB: function () {
+                console.log("addToB: " + (this.b + this.age))
+                // return this.b + this.age;
+            },
+            addToX: function () {
+                console.log("addToX: " + "haha")
+            }
+        },
+        computed: {}
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+/*全局的清除边距*/
+.clear_all {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    top: 0;
+    left: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+table, td, th {
+    border: 1px solid lightblue;
+}
+
+th {
+    height: 50px;
+}
+
+td {
+    text-align: center;
+    height: 40px;
+}
+
+hr {
+    color: lightblue;
+}
+
+.line {
+    background-color: lightblue;
+    height: 1px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.header {
+    background-color: rgb(5, 65, 104);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer {
+    display: flex;
+    position: fixed;
+    background-color: #444444;
+    color: white;
+    list-style: none;
+    width: 100%;
+    bottom: 0%;
+    margin: 0px;
+    padding: 5px;
+}
+
+/*顶部菜单*/
+.topmenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #777;
+    z-index: 1000;
+}
+
+.topmenu li {
+    float: left;
+}
+
+.topmenu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.topmenu li a:hover {
+    background-color: #222;
+}
+
+.topmenu li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+/*顶部按钮分组*/
+.top-group-button-all {
+    margin-top: 60px;
+    display: flex;
+    height: 120px;
+    flex-direction: row;
+    width: 100%;
+}
+
+/*顶部按钮分组的每个分组*/
+div.top-group-button-group {
+    margin: 6px;
+    background: #e9ecef;
+    flex: 2
+}
+
+/*选择所有 .top-group-button-group > div 是父级的第一个元素*/
+.top_group-button-group-title {
+    font-size: 28px;
+}
+
+.top_group-button-group-content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 8px;
+}
+
+div.top-group-button-group > select {
+    height: 15px;
+}
+
+/*顶部的按钮样式*/
+.btn {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .3rem .5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+/*table中的按钮样式*/
+.table_button {
+    width: 30%;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .2rem .2rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #097c1b;
+    border-color: #6c757d;
+
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #7c0f0a;
+    border-color: #6c757d;
+}
+
+.body-frame {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+.body-table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5rem;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.page_active {
+    background-color: mediumspringgreen;
+}
+
+.form_edit_bg {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.form_edit_pop {
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    z-index: 1001;
+    width: 50%;
+    height: 60%;
+    margin-left: -370px;
+    margin-top: -253px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px #8b8b8b;
+    background: #fff;
+    overflow: scroll;
+
+}
+
+.pop-cont {
+    padding: 30px 0 22px;
+}
+
+.textarea {
+    width: 400px;
+    min-height: 80px;
+    max-height: 300px;
+    _height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    outline: 0;
+    border: 1px solid #a0b3d6;
+    font-size: 12px;
+    line-height: 24px;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+td {
+    max-width: 150px;
+    max-height: 20px;
+    /*word-break: break-all;*/
+    /*word-wrap:break-word;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#dragshow, #dbl_click_edit {
+
+}
+
+/*以下为：点击页面的列表中的单元格，弹出的编辑框 he  点击新增，拷贝，编辑弹出的编辑框*/
+.click_list_cell_edit_frame, .edit_add_copy_edit_frame {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 50vw;
+    top: 10%;
+    left: 20%;
+    background-color: #fff;
+    border-width: thin;
+    border-style: solid;
+    z-index: 5000;
+
+}
+
+.click_list_cell_edit_title {
+    background-color: #777;
+    padding: 10px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.click_list_cell_edit_textarea {
+
+    width: 100%;
+    overflow: scroll;
+    flex: 1;
+    font-size: 20px;
+}
+
+.click_list_cell_edit_button_frame {
+    margin-left: 40%;
+}
+
+/*以下是控制点击新增，拷贝，编辑 按钮后的弹框*/
+.edit_add_copy_edit_title {
+    background-color: #777;
+    padding: 10px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 0;
+    margin-top: 0
+}
+
+.edit_add_copy_edit_content_row_frame {
+    display: flex;
+    flex-direction: row;
+    top: 10%;
+    left: 20%;
+}
+
+.edit_add_copy_edit_content_row_title {
+
+    width: 100px;
+    margin-left: 15px;
+}
+
+.edit_add_copy_edit_content_row_content {
+    flex: 6;
+    margin-left: 5px;
+    margin-right: 15px
+}
+
+
+
+
+

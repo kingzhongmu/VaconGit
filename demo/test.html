@@ -1,0 +1,607 @@
+<!--请求示例：https://www.jianshu.com/p/c2e1a07bd1f7-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Simple Mock</title>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+</head>
+
+
+<style>
+
+</style>
+
+<body>
+<div id="app">
+    <div>
+        <!--页面导航-->
+        <ul class="topmenu">
+            <li><a href="#home" class="active">主页</a></li>
+            <li><a href="#news">新闻</a></li>
+            <li><a href="#contact">联系我们</a></li>
+            <li><a href="#about">关于我们</a></li>
+        </ul>
+
+        <!--顶部分区操作框-->
+        <div class="top-group-button-all">
+            <!--操作框-测试页面-->
+            <div class="top-group-button-group" style="flex:1">
+                <div class="top_group-button-group-title">测试页面</div>
+                <hr>
+                <div class="top_group-button-group-content" style="flex:1">
+                    <button class="btn btn-secondary" style="width:50%">展示测试页面</button>
+
+                </div>
+            </div>
+            <!--操作框-搜索-->
+            <div class="top-group-button-group">
+                <div class="top_group-button-group-title">搜索</div>
+                <hr>
+                <div class="top_group-button-group-content">
+                    <select v-model="user_project" class="btn">
+                        <option v-for="option_item in all_project_name">{[option_item]}</option>
+                    </select>
+                    <select v-model="search_obj.test_page" class="btn">
+                        <option v-for="option_item in all_test_pages">{[option_item]}</option>
+                    </select>
+                    <input v-model="search_obj.test_point" type="text" placeholder="测试点">
+                    <button @click="search_mock_data" class="btn btn-secondary">搜索</button>
+                </div>
+            </div>
+
+            <!--操作框-添加删除-->
+            <div class="top-group-button-group">
+                <div class="top_group-button-group-title">操作</div>
+                <hr>
+                <div class="top_group-button-group-content">
+                    <button @click="batch_mock_item_data_del" class="btn btn-secondary">批量删除</button>
+                    <button @click="add_mock_data_call" class="btn btn-secondary">添加</button>
+                    <input class="btn btn-secondary" placeholder="批量上传文件" id="form-file" type="file">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="body-frame">
+
+        <table class="body-table">
+            <thead>
+            <tr>
+                <th>
+                    <input @click="checked_all_items" type="checkbox" value="">
+                </th>
+                <th>ID</th>
+                <th>项目名称</th>
+                <th>测试页面</th>
+                <th>测试点</th>
+                <th>操作</th>
+                <th>路由</th>
+                <th>方法</th>
+                <th>数据</th>
+                <th>激活</th>
+                <th>修改时间</th>
+            </tr>
+            </thead>
+
+
+            <tbody>
+            <tr v-for="(mock_item, index) in all_mock_data">
+                <td>
+                    <input @click="checked_item_data(index)" type="checkbox" v-bind:checked="mock_item.item_selected">
+                </td>
+                <td>{[mock_item.id]}</td>
+                <td>{[mock_item.project_name]}</td>
+                <td>{[mock_item.test_name]}</td>
+                <td>{[mock_item.test_point]}</td>
+                <td>
+                    <button @click="edit_mock_data_call(mock_item.id-1)" class="table_button btn-success">编辑</button>
+                    <button @click="del_mock_data(mock_item.id-1)" class="table_button btn-warning">删除</button>
+                </td>
+                <td>{[mock_item.route_url]}</td>
+                <td>{[mock_item.method]}</td>
+                <td>{[mock_item.res_data]}</td>
+                <td>{[mock_item.current_active]}</td>
+                <td>{[mock_item.update_time]}</td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <ul class="footer">
+            <li v-if="pagination_data.current_page>1">
+                <a @click="page_choose(pagination_data.current_page-1)" class="page-link" href="#">前一页</a>
+            </li>
+            <li v-for="page_index in pagination_data.total_page">
+                <a @click="page_choose(page_index)"
+                   v-if="page_index >= pagination_data.current_page &&  page_index < pagination_data.current_page + pagination_data.visible_count "
+                   v-bind:class="page_index===pagination_data.current_page? 'page_active':''"
+                   class="page-link" href="#">{[page_index]}</a>
+            </li>
+            <li v-if="pagination_data.current_page<pagination_data.total_page">
+                <a @click="page_choose(pagination_data.current_page+1)" class="page-link" href="#">后一页</a>
+            </li>
+        </ul>
+
+        <!--点击按钮后，展示测试页面，这里展示一张图-->
+        <div>
+
+        </div>
+
+        <!--点击添加按钮后，弹出新增mock数据表单-->
+        <!--v-bind时 style支持字典方式和class 支持list方式-->
+        <div v-bind:style="{display: edit_show}">
+            <div class="form_edit_bg"></div>
+            <div class="form_edit_pop">
+                <h2 style="margin-left: 15px">新增Mock数据</h2>
+                <hr style="background: #000;">
+                <div style="display: flex; flex-direction: column">
+
+                    <dl v-if="edit_id_show > 0" style="display: flex; flex-direction:row; margin-left: 15px;">
+                        <dt style="width: 80px; margin-left:15px">ID:</dt>
+                        <dd style="flex:5; margin-left: 5px; margin-right:15px">{[edit_id_show]}
+                        </dd>
+                    </dl>
+                    <dl v-for="(edit_item, index) in edit_mock_data_info" style="display: flex; flex-direction:row">
+
+                        <dt style="width: 80px; margin-left:15px">{[edit_item.title]}:</dt>
+                        <dd v-if="edit_item.item_type==0" style="flex:5; margin-left: 5px; margin-right:15px">
+                            <input type="text" v-model="edit_item.data_value" v-bind:placeholder="edit_item.marked_words" v-bind:required="edit_item.required" class="r-title"
+                                   style="width:100%; height:30px"/>
+                        </dd>
+                        <dd v-if="edit_item.item_type==2" style="flex:5; margin-left: 5px; margin-right:15px">
+                            <select v-model="edit_item.data_value" v-bind:required="edit_item.required" class="r-method" style="width:50%; height:30px">
+                                <option v-for="option_item in edit_item.select_options">{[option_item]}</option>
+                            </select>
+                        </dd>
+                        <dd v-if="edit_item.item_type==1" style="flex:5; margin-left: 5px; margin-right:15px">
+                            <textarea v-model="edit_item.data_value" v-bind:required="edit_item.required" class="r-reqparams" name="" rows="6" cols=""
+                                      style="width:100%; ">
+                            </textarea>
+
+                        </dd>
+
+                    </dl>
+                    <dl style="display: flex; flex-direction:row; margin-left: 15px;">
+                        <input v-model="edit_save_last_input" type="checkbox" value="">
+                        <div>保留本次编辑</div>
+                    </dl>
+
+
+                </div>
+                <div style="margin-left: 40%">
+                    <button class= "btn btn-secondary" style="width: 80px; " @click="add_mock_data_ok">确定</button>
+                    <button class= "btn btn-secondary" style="width: 80px; " @click="editor_cancel">取消</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script>
+
+    //一个vue的实例
+    const app = new Vue({
+        delimiters: ['{[', ']}'],
+        el: '#app',
+
+        //model
+        data: {
+            // 登录用户所归属项目
+            user_project: "腾讯博物官",
+
+            // 下面两个数据控制 搜索条件的select下拉框
+            all_project_name: ['all', '腾讯博物官', '叮当助手'],
+            all_test_pages: ['all', '首页', '发现页'],
+            // 下面三个数据控制 搜索
+            search_obj: {
+                url: '/search',
+                project_name: '腾讯博物官',
+                test_page: '首页',
+                test_point: ''
+            },
+
+            del_data_obj: {
+                url: "/del_mock_data",
+                del_post_data: {}
+            },
+            add_data_obj: {
+                url: "/add_mock_data",
+                del_post_data: {}
+            },
+
+            edit_show: "none",   // 控制编辑框的出现或隐藏
+
+            // 每个页面展示的mock data 数据个数
+            page_mock_item_limit: 20,
+            all_mock_data_selected: false,   // 定义表格中所有的mock item 选中状态
+            all_mock_data: [{
+                // 以下后台传递的数据
+                id: 1,
+                project_name: '腾讯博物官',
+                test_name: '首页',
+                test_point: '获取首页推荐',
+                route_url: '/api/getHomeRecommendV2',
+                method: 'post',
+                req_para: 'req_para',
+                req_data: 'req_data',
+                res_data: '{"x":123,"y":456}',
+                test_detail_des: "test_detail_des",
+                current_active: '1',
+                update_time: '2018-08-22 18:58:19',
+                // 以下为状态数据, 默认0为未选中，1为选中
+                item_selected: false,
+            }, {
+                // 以下后台传递的数据
+                id: 2,
+                project_name: '腾讯博物官',
+                test_name: '首页',
+                test_point: '获取首页推荐x',
+                route_url: '/api/getHomeRecommendV2',
+                method: 'post',
+                req_para: 'req_parax',
+                req_data: 'req_datax',
+                res_data: '{"x":124,"y":454}',
+                test_detail_des: "test_detail_des",
+                current_active: '1',
+                update_time: '2018-08-22 18:58:19',
+                // 以下为状态数据, 默认0为未选中，1为选中
+                item_selected: false,
+            }],
+            // 控制底部的pagination，页面分页
+            pagination_data: {
+                current_page: 1,
+                total_page: 10,
+                visible_count: 6
+            },
+            tmp_mock_data: [], // 保存edit_mock_data_info的副本初始值
+            edit_save_last_input: true,        // 保存上次的编辑结果
+            edit_id_show: 0,                   // edit控件上展示的id，控制进行编辑还是新增
+            edit_mock_data_info: [
+                {
+                    data_key: "project_name",
+                    data_value: "",
+                    title: "项目名称",                    // 保存编辑页面每项前的名字
+                    marked_words: "请输入项目名称",        // 输入框内的提示项目
+                    required: true,                     // 是否必填
+                    item_type: 0                        // 项目类型（0为input 1为 textarea  2为select）
+                },
+                {
+                    data_key: "test_name",
+                    data_value: "",
+                    title: "测试页面",                    // 保存编辑页面每项前的名字
+                    marked_words: "请输入测试页面",        // 输入框内的提示项目
+                    required: true,                     // 是否必填
+                    item_type: 0                        // 项目类型（0为input 1为 textarea  2为select）
+                },
+                {
+                    data_key: "test_point",
+                    data_value: "",
+                    title: "测试点",                     // 保存编辑页面每项前的名字
+                    marked_words: "请输入测试点",         // 输入框内的提示项目
+                    required: true,                     // 是否必填
+                    item_type: 0                        // 项目类型（0为input 1为 textarea  2为select）
+                },
+                {
+                    data_key: "route_url",
+                    data_value: "",
+                    title: "测试路由",                    // 保存编辑页面每项前的名字
+                    marked_words: "请输入测试路由",        // 输入框内的提示项目
+                    required: "required",               // 是否必填
+                    item_type: 0                        // 项目类型（0为input 1为 textarea  2为select）
+                },
+                {
+                    data_key: "method",
+                    data_value: "get",
+                    title: "路由方法",                    // 保存编辑页面每项前的名字
+                    marked_words: "请输入路由方法",        // 输入框内的提示项目
+                    required: true,                     // 是否必填
+                    item_type: 2,                       // 项目类型（0为input 1为 textarea  2为select）
+                    select_options: ["post", "get"]      // select的选项
+                },
+                {
+                    data_key: "res_data",
+                    data_value: "",
+                    title: "返回数据",                    // 保存编辑页面每项前的名字
+                    marked_words: "请输入返回数据",        // 输入框内的提示项目
+                    required: false,                    // 是否必填
+                    item_type: 1,                       // 项目类型（0为input 1为 textarea  2为select）
+                },
+                {
+                    data_key: "current_active",
+                    data_value: "true",
+                    current_active: "1",                // 是否激活
+                    title: "是否激活",                    // 保存编辑页面每项前的名字
+                    marked_words: "请输入是否激活",        // 输入框内的提示项目
+                    required: false,                    // 是否必填//                }
+                    item_type: 2,                       // 项目类型（0为input 1为 textarea  2为select）
+                    select_options: ["true", "false"]   // select的选项
+                },
+                {
+                    data_key: "req_para",
+                    data_value: "",
+                    title: "请求参数",                    // 保存编辑页面每项前的名字
+                    marked_words: "请输入请求参数",        // 输入框内的提示项目
+                    required: false,                    // 是否必填
+                    item_type: 1,                       // 项目类型（0为input 1为 textarea  2为select）
+                },
+                {
+                    data_key: "req_data",
+                    data_value: "",
+                    title: "请求数据",                    // 保存编辑页面每项前的名字
+                    marked_words: "请输入请求参数",        // 输入框内的提示项目
+                    required: false,                    // 是否必填
+                    item_type: 1,                       // 项目类型（0为input 1为 textarea  2为select）
+                },
+
+                {
+                    data_key: "test_detail_des",
+                    data_value: "",
+                    title: "测试描述",                    // 保存编辑页面每项前的名字
+                    marked_words: "请输入测试点描述",       // 输入框内的提示项目
+                    required: false,                    // 是否必填
+                    item_type: 1,                       // 项目类型（0为input 1为 textarea  2为select）
+                }
+
+            ]
+        },
+        created: function(){
+            // 初始化 tmp_mock_data 数据，保存初始值
+            this.tmp_mock_data = deepClone(this.edit_mock_data_info);
+        },
+
+        mounted: function () {
+
+        //     // GET /someUrl
+        //     that = this;
+        //     that.$http.get('/test').then(response => {
+        //         console.log("vacon-test-before")
+        //         console.log(response.data);
+        //         console.log("vacon-test-after")
+        //         // get body data
+        //         that.people = response.data;
+        //         console.log(that.people)
+        //
+        //     }, response => {
+        //         console.log("error");
+        //     });
+        },
+
+        methods: {
+            edit_mock_data_call: function (mock_data_item) {
+                /**
+                 * 功能： 本函数用于绑定列表中的每个编辑按钮 【编辑】【删除】
+                 * @param:mock_data_item: 传入的列表中对应的序号，序号从0开始
+                 */
+
+                // 把数据加载到编辑模版
+                var edit_data = this.edit_mock_data_info;
+                console.log(mock_data_item);
+                for(var index = 0; index < edit_data.length; index++){
+                    var tmp_key = edit_data[index]['data_key'];
+                    console.log("tmp_key", tmp_key)
+                    edit_data[index]['data_value'] = this.all_mock_data[mock_data_item][tmp_key];
+                    console.log("---", tmp_key, this.all_mock_data[mock_data_item][tmp_key])
+                }
+                // 对双向绑定数据进行同步
+                this.edit_mock_data_info = deepClone(edit_data);
+                // 展示编辑界面
+                console.log("--", this.all_mock_data[mock_data_item]['id']);
+                this.edit_show = "";
+                this.edit_id_show = this.all_mock_data[mock_data_item]['id']
+
+            },
+            add_mock_data_call: function () {
+                // 点击 添加 调起新增页面
+                this.edit_show = "";
+
+            },
+            add_mock_data_ok: function () {
+                // 新增数据的编辑页面填入数据后确认
+                var post_datas = {};
+                // 检查输入内容是否正确，注意，要前后台均进行验证
+                var edit_data = this.edit_mock_data_info;
+
+                for(var i_x = 0; i_x < edit_data.length; i_x++){
+                    var post_key = edit_data[i_x].data_key;
+                    var post_data = edit_data[i_x].data_value;
+                    post_datas[post_key] = post_data;
+                }
+
+                // 如果是编辑页面，要添加id,进行数据更新；否则不添加id属性
+                // 后台也是根据是否有id属性来进行 添加或编辑操作
+                if(this.edit_id_show){
+                    post_datas["id"] = this.edit_id_show;
+                }
+                console.log("--------", post_datas);
+
+
+                var post_result = true;
+                // 处理编辑界面数据，请求后台数据
+
+                if (post_result) {
+                    this.edit_show = "none";
+                } else {
+                    alert("请检查网络，请求数据错误");
+                }
+
+
+
+                // 如果不保存编辑，恢复初始状态
+                if(!this.edit_save_last_input){
+                    // 恢复初始状态
+                    this.edit_mock_data_info = deepClone(this.tmp_mock_data);
+                }
+                // 初始化edit_id_show为0，防止状态保存，影响下次新增操作
+                this.edit_id_show = 0;
+            },
+            editor_cancel: function () {
+                // 如果不保存编辑，恢复初始状态
+                if(!this.edit_save_last_input){
+                    // 恢复初始状态
+                    this.edit_mock_data_info = deepClone(this.tmp_mock_data);
+                }
+                // 初始化edit_id_show为0，防止状态保存，影响下次新增操作
+                this.edit_id_show = 0;
+                // 新增数据的编辑界面取消
+                this.edit_show = "none"
+
+            },
+
+            del_mock_data: function (mock_data_item_id) {
+                /**
+                 * 功能： 本函数用于绑定列表中的每个删除按钮 【编辑】【删除】
+                 * @param:mock_data_item: 传入的列表中对应的序号，序号从0开始
+                 */
+                // 本函数用于绑定列表中的每个删除按钮
+                console.log("del_mock_data > del item is:" + mock_data_item_id);
+                this.com_del_mock_data([mock_data_item_id]);
+            },
+
+            checked_item_data: function (item_index) {
+                // 本函数用于绑定列表中的checked 按钮
+                console.log(item_index)
+                var current_item_checked = this.all_mock_data[item_index].item_selected
+                if (current_item_checked)
+                    this.all_mock_data[item_index].item_selected = false;
+                else
+                    this.all_mock_data[item_index].item_selected = true;
+            },
+
+            checked_all_items: function () {
+                // 本函数用于绑定列表中的全选checked 按钮
+                var current_all_mock_item_selected = this.all_mock_data_selected;
+
+                if (current_all_mock_item_selected)
+                    this.all_mock_data_selected = false;
+                else
+                    this.all_mock_data_selected = true;
+
+                for (var index = 0; index < this.all_mock_data.length; index++) {
+                    this.all_mock_data[index].item_selected = this.all_mock_data_selected;
+                }
+            },
+            show_test_page: function () {
+                // 对应页面左上方的展示测试页面按钮
+
+            },
+            search_mock_data: function () {
+                // 用于搜索当前过滤条件下的测试mock数据
+                this.com_search_data_from_back_stage(0)
+
+            },
+            batch_mock_item_data_del: function () {
+                // 批量删除页面列表中的mock数据
+                var selected_list = [];
+                for (ix = 0; ix < this.all_mock_data.length; ix++) {
+                    if (ix.item_selected)
+                        selected_list.push(ix);
+                }
+                console.log("batch_mock_item_data_del > del item is: ");
+                console.log(selected_list);
+
+                this.com_del_mock_data(selected_list);
+            },
+            patch_mock_item_data_add: function () {
+                // 批量添加页面列表中的mock数据
+
+            },
+            page_choose: function (page_num) {
+                // 处理点击页码后的跳转
+                console.log('/search?page=' + page_num);
+                this.pagination_data.current_page = page_num;
+
+                // that = this;
+                // that.$http.get('/search?page=' + page_num).then((response) => {
+                //     console.log(response.data);
+                //
+                //     // 从后台请求搜索的mock数据，并更新内容
+                //     res_data = response.data;
+                //
+                //     // 更新数据
+                //
+                //     // 示例整个数组赋值
+                //     // that.people = [{name: 'vacon', age: 30, sex: 'Male'}];
+                //
+                // }, function () {
+                //     alert('请求失败！');
+                // });
+
+
+            },
+
+            com_del_mock_data: function (mock_id_list) {
+                // 删除页面的mock数据
+                var del_data = this.del_data_obj.del_post_data;
+                var del_url = this.del_data_obj.url;
+
+                // 为post 的data域添加数据
+                del_data['del_data'] = mock_id_list;
+                this.$http.post(del_url, del_data, emulateJson = true).then(function (res) {
+                        //请求成功
+                    }, function () {
+                        //请求失败
+                    }
+                );
+
+            },
+
+            com_search_data_from_back_stage: function (page_index) {
+
+                var url = this.search_obj.url;
+                var project_name = this.search_obj.project_name;
+                var test_page = this.search_obj.test_page;
+                var test_point = this.search_obj.test_point;
+                var page_mock_item_limit = this.page_mock_item_limit;
+
+
+                var search_resule_url = url + "?" + "project_name=" + project_name
+                    + "&test_page=" + test_page + "&page_item_limit=" + page_mock_item_limit
+                    + "&page_index=" + page_index
+
+                if (test_point.trim()) {
+                    search_resule_url = search_resule_url + "?test_point=" + test_point
+                }
+
+                console.log(search_resule_url)
+
+                // this.$http.get(search_resule_url).then((response) => {
+                //     console.log(response.data);
+                //     var res_data = response.data;
+                //
+                //     //  給people下标为0的赋值
+                //     // Vue.set(that.people,0,{name: 'vacon', age: 30, sex: 'Male'});
+                //     // 整个数组赋值
+                //     // this.people = [{name: 'vacon', age: 30, sex: 'Male'}];
+                //
+                //     // 【错误用法】data中数组数据中的单个数据通过直接赋值的方式，页面不会刷新
+                //     // that.people[0] = {name: 'vaconx', age: 10, sex: 'Male'}
+                //     // alert("从后台获取的get数据: " + res_data);
+                //
+                // }, function () {
+                //     alert('请求失败！');
+                // });
+            },
+
+
+        }
+
+    })
+
+
+</script>
+
+
+</body>
+</html>

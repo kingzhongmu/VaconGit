@@ -1,9 +1,273 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1216f51-20b9-4fe4-a1f5-902deba862dd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/hello.py" afterPath="$PROJECT_DIR$/hello.py" />
+    <list default="true" id="061d404f-dbbd-47c5-959a-c74692b4c65a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/simple_mock-master.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/database_init.sql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/Alert告警.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/Animation动画.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/Article文章.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/Badge徽章.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/Base基础标签.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/Block块.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/BreadCrumb面包屑导航.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/Button按钮.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/Close关闭.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/Column列.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/Comment评论.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/Contrast对比.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/Cover覆盖.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/arrows.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/accordion.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/accordion.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/accordion.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/accordion.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/accordion.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/accordion.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/autocomplete.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/autocomplete.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/autocomplete.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/autocomplete.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/autocomplete.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/autocomplete.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/datepicker.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/datepicker.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/datepicker.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/datepicker.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/datepicker.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/datepicker.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/dotnav.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/dotnav.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/dotnav.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/dotnav.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/dotnav.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/dotnav.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-advanced.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-advanced.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-advanced.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-advanced.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-advanced.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-advanced.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-file.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-file.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-file.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-file.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-file.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-file.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-password.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-password.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-password.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-password.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-password.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-password.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-select.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-select.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-select.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-select.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-select.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/form-select.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/htmleditor.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/htmleditor.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/htmleditor.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/htmleditor.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/htmleditor.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/htmleditor.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/nestable.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/nestable.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/nestable.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/nestable.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/nestable.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/nestable.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/notify.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/notify.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/notify.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/notify.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/notify.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/notify.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/placeholder.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/placeholder.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/placeholder.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/placeholder.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/placeholder.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/placeholder.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/progress.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/progress.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/progress.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/progress.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/progress.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/progress.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/search.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/search.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/search.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/search.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/search.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/search.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slidenav.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slidenav.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slidenav.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slidenav.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slidenav.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slidenav.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slider.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slider.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slider.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slider.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slider.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slider.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slideshow.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slideshow.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slideshow.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slideshow.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slideshow.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/slideshow.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/sortable.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/sortable.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/sortable.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/sortable.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/sortable.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/sortable.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/sticky.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/sticky.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/sticky.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/sticky.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/sticky.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/sticky.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/tooltip.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/tooltip.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/tooltip.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/tooltip.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/tooltip.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/tooltip.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/upload.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/upload.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/upload.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/upload.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/upload.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/components/upload.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/custom.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/site.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/slimtable.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/uikit.almost-flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/uikit.almost-flat.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/uikit.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/uikit.gradient.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/uikit.gradient.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/css/uikit.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/fonts/FontAwesome.otf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/fonts/fontawesome-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/img/index.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/index-vue.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/accordion.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/accordion.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/autocomplete.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/autocomplete.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/datepicker.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/datepicker.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/form-password.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/form-password.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/form-select.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/form-select.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/grid-parallax.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/grid-parallax.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/grid.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/grid.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/htmleditor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/htmleditor.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/lightbox.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/lightbox.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/nestable.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/nestable.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/notify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/notify.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/pagination.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/pagination.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/parallax.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/parallax.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/search.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/search.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/slider.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/slider.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/slideset.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/slideset.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/slideshow-fx.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/slideshow-fx.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/slideshow.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/slideshow.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/sortable.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/sortable.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/sticky.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/sticky.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/timepicker.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/timepicker.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/tooltip.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/tooltip.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/upload.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/components/upload.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/alert.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/alert.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/button.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/button.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/core.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/core.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/cover.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/cover.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/dropdown.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/dropdown.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/grid.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/grid.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/modal.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/modal.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/nav.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/nav.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/offcanvas.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/offcanvas.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/scrollspy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/scrollspy.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/smooth-scroll.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/smooth-scroll.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/switcher.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/switcher.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/tab.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/tab.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/toggle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/toggle.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/touch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/touch.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/utility.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/core/utility.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/custom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/jquery-mini.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/slimtable.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/uikit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/js/uikit.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/test.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/uikit-doc-2.25.0.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/demo/知识点.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mock_server.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mock_web.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/process_crlf.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/custom.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/haha.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/axios.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/custom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/vue-resource.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/vue.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/utils/common.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/遗留可做.txt" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,15 +277,99 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/flasky$hello.coverage" NAME="hello Coverage Results" MODIFIED="1521682130821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mock_simple$process_crlf.coverage" NAME="process_crlf Coverage Results" MODIFIED="1579582640981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/simple_mock_master$test.coverage" NAME="test Coverage Results" MODIFIED="1535715571540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/simple_mock_master$mock_server.coverage" NAME="mock_server Coverage Results" MODIFIED="1579402830309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mock_http$process_crlf.coverage" NAME="process_crlf Coverage Results" MODIFIED="1579576465787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mock_simple$mock_server.coverage" NAME="mock_server Coverage Results" MODIFIED="1579576805492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/simple_mock_master$mock_server_test.coverage" NAME="mock_server-test Coverage Results" MODIFIED="1534937354006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/simple_mock_master$simple_mock_master.coverage" NAME="simple_mock-master Coverage Results" MODIFIED="1579402833158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/mock_simple$simple_mock_master.coverage" NAME="simple_mock-master Coverage Results" MODIFIED="1579576821849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/simple_mock_master$common.coverage" NAME="common Coverage Results" MODIFIED="1534936090097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="hello.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hello.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="mock_server.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mock_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+            <state relative-caret-position="1346">
+              <caret line="86" column="30" lean-forward="false" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="process_crlf.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/process_crlf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="75" column="37" lean-forward="true" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-17975">
+              <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mock_web.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mock_web.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="260" column="19" lean-forward="true" selection-start-line="260" selection-start-column="19" selection-end-line="260" selection-end-column="19" />
+              <folding>
+                <element signature="e#46#119#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BreadCrumb面包屑导航.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/BreadCrumb面包屑导航.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/common.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -29,27 +377,192 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>list_edit_click</find>
+      <find>项目名称</find>
+      <find>style</find>
+      <find>form_edit_bg</find>
+      <find>edit_mock_data</find>
+      <find>user_project</find>
+      <find>search_obj</find>
+      <find>options</find>
+      <find>option</find>
+      <find>select_options</find>
+      <find>edit_item</find>
+      <find>click_list_cell_edit_frame</find>
+      <find>row</find>
+      <find>dragshow</find>
+      <find>btn</find>
+      <find>relat</find>
+      <find>active</find>
+      <find>v-drag</find>
+      <find>pagination_data</find>
+      <find>test</find>
+      <find>add_mock_data_call</find>
+      <find>batch_edit_option</find>
+      <find>edit_list_data</find>
+      <find>batch_edit</find>
+      <find>batch_mock_item_data_edit</find>
+      <find>batch_mock_item_data_edit_call</find>
+      <find>req_path</find>
+      <find>batch_edit_show</find>
+      <find>batch_edit_selected_list</find>
+      <find>MockData</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>test_page</replace>
+      <replace>add_edit_mock_data_ok</replace>
+      <replace>add_edit_mock_data_cancel</replace>
+      <replace>edit_mock_data_init_template</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\Vacon_Projct\pyCharmProj\2018-7-12\simple_mock-master</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hello.py" />
+        <option value="$PROJECT_DIR$/db.config" />
+        <option value="$PROJECT_DIR$/db.configx" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/utils/common.py" />
+        <option value="$PROJECT_DIR$/mock_server-副本.py" />
+        <option value="$PROJECT_DIR$/mock/css/index.css" />
+        <option value="$PROJECT_DIR$/mock/index.html" />
+        <option value="$PROJECT_DIR$/demo/Alert.html" />
+        <option value="$PROJECT_DIR$/demo/Article.html" />
+        <option value="$PROJECT_DIR$/demo/Badge.html" />
+        <option value="$PROJECT_DIR$/demo/Base.html" />
+        <option value="$PROJECT_DIR$/demo/Block.html" />
+        <option value="$PROJECT_DIR$/demo/BreadCrumb.html" />
+        <option value="$PROJECT_DIR$/demo/Button按钮.html" />
+        <option value="$PROJECT_DIR$/demo/Close关闭.html" />
+        <option value="$PROJECT_DIR$/demo/知识点.txt" />
+        <option value="$PROJECT_DIR$/demo/Column列.html" />
+        <option value="$PROJECT_DIR$/demo/Comment评论.html" />
+        <option value="$PROJECT_DIR$/demo/Contrast对比.html" />
+        <option value="$PROJECT_DIR$/demo/Hover悬停.html" />
+        <option value="$PROJECT_DIR$/demo/css/uikit.css" />
+        <option value="$PROJECT_DIR$/demo/js/slimtable.min.js" />
+        <option value="$PROJECT_DIR$/demo/index.html" />
+        <option value="$PROJECT_DIR$/demo/index-vue.html" />
+        <option value="$PROJECT_DIR$/demo/css/custom.css" />
+        <option value="$PROJECT_DIR$/demo/js/custom.js" />
+        <option value="$PROJECT_DIR$/demo/test.html" />
+        <option value="$PROJECT_DIR$/static/test.html" />
+        <option value="$PROJECT_DIR$/vacon_database_init.sql" />
+        <option value="$PROJECT_DIR$/static/js/custom.js" />
+        <option value="$PROJECT_DIR$/templates/test.html" />
+        <option value="$PROJECT_DIR$/遗留可做.txt" />
+        <option value="$PROJECT_DIR$/static/js/vue.min.js" />
+        <option value="$PROJECT_DIR$/static/js/axios.js" />
+        <option value="$PROJECT_DIR$/static/js/vue-resource.js" />
+        <option value="$PROJECT_DIR$/static/css/custom.css" />
+        <option value="$PROJECT_DIR$/mock_server.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/mock_web.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/haha.html" />
+        <option value="$PROJECT_DIR$/process_crlf.py" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1018" />
-    <option name="y" value="43" />
-    <option name="width" value="827" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="640" />
+    <option name="y" value="142" />
+    <option name="width" value="1076" />
     <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>BashSupport</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Puppet</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>RegExp</id>
+          </State>
+          <State>
+            <id>TypeScript</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>XmlUnboundNsPrefix</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -66,35 +579,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="flasky" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flasky" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flasky" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="flasky" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.5 virtualenv at D:\flasky\venv &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="mock_simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock_simple" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Vacon_Projct\pyCharmProj\2018-7-12\simple_mock-master\templates" />
+      <recent name="D:\Vacon_Projct\pyCharmProj\2018-7-12\simple_mock-master" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\My_proj_git\mock_http" />
+      <recent name="D:\Vacon_Projct\pyCharmProj\2018-7-12\simple_mock-master\static\js" />
+      <recent name="D:\Vacon_Projct\pyCharmProj\2018-7-12\simple_mock-master\templates\js" />
+      <recent name="D:\Vacon_Projct\pyCharmProj\2018-7-12\simple_mock-master\templates\css" />
+      <recent name="D:\Vacon_Projct\pyCharmProj\2018-7-12\simple_mock-master\mock" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -108,8 +629,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.process_crlf">
+    <configuration name="haha.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/simple_mock-master/static/haha.html" />
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/simple_mock-master/templates/index.html" />
+    <configuration name="mock_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -120,17 +643,86 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="flasky" />
+      <module name="simple_mock-master" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hello.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mock_server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="process_crlf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="simple_mock-master" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/process_crlf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="simple_mock-master" type="PythonConfigurationType" factoryName="Python" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="simple_mock-master" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mock_web.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="simple_mock-master" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Python.simple_mock-master" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.haha.html" />
+      <item index="4" class="java.lang.String" itemvalue="Python.mock_server" />
+      <item index="5" class="java.lang.String" itemvalue="Python.process_crlf" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.hello" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.process_crlf" />
+        <item index="1" class="java.lang.String" itemvalue="Python.mock_server" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.haha.html" />
       </list>
     </recent_temporary>
   </component>
@@ -142,37 +734,46 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f1216f51-20b9-4fe4-a1f5-902deba862dd" name="Default" comment="" />
-      <created>1521633502911</created>
+      <changelist id="061d404f-dbbd-47c5-959a-c74692b4c65a" name="Default" comment="" />
+      <created>1534815818969</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1521633502911</updated>
+      <updated>1534815818969</updated>
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32135195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30116278" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2274678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12017167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -187,10 +788,367 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hello.py">
+    <entry file="file://$PROJECT_DIR$/mock_server-副本.py" />
+    <entry file="file://$PROJECT_DIR$/mock/css/index.less" />
+    <entry file="file://$PROJECT_DIR$/demo/css/uikit.almost-flat.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Animation动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="73" lean-forward="true" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Alert告警.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Article文章.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="83" column="30" lean-forward="false" selection-start-line="72" selection-start-column="21" selection-end-line="83" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Badge徽章.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="63" column="56" lean-forward="false" selection-start-line="63" selection-start-column="56" selection-end-line="63" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Base基础标签.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="278" column="6" lean-forward="false" selection-start-line="278" selection-start-column="6" selection-end-line="278" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Close关闭.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="50" column="11" lean-forward="false" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Column列.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="74" lean-forward="true" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Contrast对比.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1616">
+          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Comment评论.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-834">
+          <caret line="52" column="42" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="52" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Button按钮.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Block块.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="71" column="46" lean-forward="true" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/tables.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="153" column="16" lean-forward="false" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/js/slimtable.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1659">
+          <caret line="79" column="46" lean-forward="false" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Cover覆盖.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/css/uikit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="1934" column="1" lean-forward="false" selection-start-line="1934" selection-start-column="1" selection-end-line="1934" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/aria.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="440" column="18" lean-forward="false" selection-start-line="440" selection-start-column="18" selection-end-line="440" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock/css/index.css" />
+    <entry file="file://$PROJECT_DIR$/demo/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="209" column="36" lean-forward="true" selection-start-line="209" selection-start-column="36" selection-end-line="209" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/index-vue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h2#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#hr#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#dl#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#dt#0;n#dl#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#dd#0;n#dl#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#dl#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#dt#0;n#dl#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#dd#0;n#dl#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#dd#0;n#dl#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#dd#1;n#dl#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#select#0;n#dd#1;n#dl#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#dd#2;n#dl#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#textarea#0;n#dd#2;n#dl#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#dl#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#1;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock/index.html" />
+    <entry file="file://$PROJECT_DIR$/mock_config.sql" />
+    <entry file="file://C:/Program Files/Python35/Lib/site-packages/pymysql/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2184">
+          <caret line="115" column="4" lean-forward="false" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.config" />
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="965" column="4" lean-forward="false" selection-start-line="965" selection-start-column="4" selection-end-line="965" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/遗留可做.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/axios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34839">
+          <caret line="1659" column="30" lean-forward="false" selection-start-line="1659" selection-start-column="30" selection-end-line="1659" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/vue-resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="1563" column="0" lean-forward="false" selection-start-line="1563" selection-start-column="0" selection-end-line="1563" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5460">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/img/index.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/BreadCrumb面包屑导航.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock_http/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock_http/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/知识点.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="82" lean-forward="false" selection-start-line="4" selection-start-column="82" selection-end-line="4" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/haha.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="66" column="51" lean-forward="false" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17975">
+          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1346">
+          <caret line="86" column="30" lean-forward="false" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock_web.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="260" column="19" lean-forward="true" selection-start-line="260" selection-start-column="19" selection-end-line="260" selection-end-column="19" />
+          <folding>
+            <element signature="e#46#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_crlf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="75" column="37" lean-forward="true" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,5 @@
+href="#" 表示空链接
+href="javacript:void(0);" 表示点击这个链接后执行一条javascript语句：void(0); 这条语句表示什么也不做，但是产生点击事件
+&lt; 代表转义的<
+
+pycharm里html注释是{# #}而不是<!-- -->?：https://www.cnblogs.com/shengulong/p/8401853.html

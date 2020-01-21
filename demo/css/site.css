@@ -1,0 +1,36 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	padding-bottom: 1em;
+}
+
+h1 {
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #777;
+	margin: 0.5em 0;
+	padding: 0.3em;
+	background-color: #666;
+	color: #aaa;
+	font-size: 15pt;
+}
+
+h2 {
+	font-size: 14pt;
+	margin: 0.5em 0;
+}
+
+p {
+	margin: 0.5em 0.5em;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}

@@ -1,4 +1,5 @@
 """
+test:git
 本模块用于处理把windows中的\r\n 替换成\n 或 \r
 by vacon
 """

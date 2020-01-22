@@ -33,11 +33,34 @@ def get_all_file(root_node):
     return all_path_record
 
 
+def get_all_dir(root_node):
+    """
+    通过递归的方式获取root_node下所有的路径
+    :param root_node: 根目录
+    :return:
+    """
+    ab_root = os.path.abspath(root_node)
+    all_path_record = []
+    next_level_paths = os.listdir(ab_root)
+    next_level_abs_paths = [os.path.join(ab_root, filename) for filename in next_level_paths]
+    # 空文件夹直接返回[]
+    if not next_level_abs_paths:
+        return []
+    for tmp_path in next_level_abs_paths:
+        if os.path.isdir(tmp_path):
+            all_path_record.append(tmp_path)
+            tmp_dir_path = get_all_dir(tmp_path)
+            all_path_record += tmp_dir_path
+        else:
+            continue
+    return all_path_record
+
+
 def filter_file(file, filter_suffix_list):
     """
     过滤方式
     :param file: 文件路径名称
-    :param filter_suffix_list: 如[".sh", ".py", ".go", ".cpp", ".upload", ".yml", ".json"]
+    :param filter_suffix_list: 如[".sh", ".py"]
     :return:
     """
     isfile = os.path.isfile(file)

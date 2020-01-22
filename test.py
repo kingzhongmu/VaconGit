@@ -1,3 +1,6 @@
+"""
+这个脚本是用来测试一些不清楚的特性（git test）
+"""
 from flask import jsonify, Flask, make_response, request
 import sys, requests, json
 from flask_sqlalchemy import SQLAlchemy
